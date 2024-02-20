@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Деталі масажу</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<h1>Деталі масажу</h1>
+
+<section id="massage-details">
+    <!-- Тут виводьте інформацію про масаж -->
+    <p>Опис масажу, ціна, розклад та інші деталі.</p>
+
+    <!-- Відгуки -->
+    <h2>Відгуки</h2>
+    <ul id="reviews-list">
+        <li>Відгук 1</li>
+        <li>Відгук 2</li>
+        <!-- Додавайте відгуки за потребою -->
+    </ul>
+
+    <!-- Кнопка реєстрації -->
+    <button onclick="showRegistrationForm()">Записатися на масаж</button>
+</section>
+
+<!-- Форма реєстрації -->
+<section id="registration-form" style="display: none;">
+    <h2>Форма реєстрації</h2>
+    <form>
+        <label for="full-name">ПІБ:</label>
+        <input type="text" id="full-name" name="full-name" required>
+
+        <label for="birthdate">Дата народження:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+
+        <label for="desired-date">Бажана дата запису (виберіть з вівторка, четверга, суботи або неділі):</label>
+        <select id="desired-date" name="desired-date" required>
+            <option value="Tuesday">Вівторок</option>
+            <option value="Thursday">Четвер</option>
+            <option value="Saturday">Субота</option>
+            <option value="Sunday">Неділя</option>
+        </select>
+
+        <input type="submit" value="Записатися">
+    </form>
+</section>
+
+<script src="/scripts.js"></script>
+</body>
+</html>
